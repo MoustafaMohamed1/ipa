@@ -20,14 +20,14 @@ jobs:
         with:
           flutter-version: "3.41.5"
 
-      - name: Get dependencies
-        run: flutter pub get
-
       - name: Enable iOS
         run: flutter config --enable-ios
 
       - name: Clean project
         run: flutter clean
+
+      - name: Get dependencies
+        run: flutter pub get
 
       - name: Install CocoaPods
         run: |
